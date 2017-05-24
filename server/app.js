@@ -8,7 +8,7 @@ var app = express();
 
 // middleware
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('./server/public'));
 
 // routers
 app.use('/', indexRouter);
